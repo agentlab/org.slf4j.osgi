@@ -9,10 +9,13 @@
 	
 	<parent>
 		<groupId>org.slf4j.osgi</groupId>
-		<artifactId>org.slf4j.osgi.releng</artifactId>
+		<artifactId>org.slf4j.osgi.parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../releng/org.slf4j.osgi.releng/pom.xml</relativePath>
 	</parent>
+	
+	<modules>
+		<module>org.slf4j.osgi.feature</module>
+	</modules>
 	
 	<build>
 		<plugins>

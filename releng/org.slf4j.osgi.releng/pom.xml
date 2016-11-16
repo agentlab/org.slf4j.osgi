@@ -3,48 +3,14 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.slf4j.osgi</groupId>
 	<artifactId>org.slf4j.osgi.releng</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	
+	<packaging>eclipse-target-definition</packaging>
+
 	<parent>
-		<groupId>org.eclipseorbit</groupId>
-		<artifactId>org.eclipseorbit.parent</artifactId>
-		<relativePath>../../../orbit-parent/org.eclipseorbit.parent/pom.xml</relativePath>
+		<groupId>org.slf4j.osgi</groupId>
+		<artifactId>org.slf4j.osgi.parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	
-	<modules>
-		<module>../org.slf4j.osgi.target</module>
-		
-		<module>../../plugins/org.slf4j.osgi</module>
-		
-		<module>../../features/org.slf4j.osgi.feature</module>
-		
-		<module>../org.slf4j.osgi.repository</module>
-	</modules>
-	
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<configuration>
-					<target>
-						<artifact>
-							<groupId>org.slf4j.osgi</groupId>
-							<artifactId>org.slf4j.osgi.target</artifactId>
-							<version>1.0.0-SNAPSHOT</version>
-						</artifact>
-					</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-surefire-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
