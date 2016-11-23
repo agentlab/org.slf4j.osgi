@@ -67,25 +67,10 @@
         </detail>
       </annotation>
       <requirement
-          name="org.eclipse.equinox.sdk.feature.group"/>
-      <requirement
-          name="org.junit"/>
-      <requirement
-          name="org.eclipse.swt.dummyfragments.feature.group"/>
-      <requirement
           name="*"/>
       <sourceLocator
           rootFolder="${org.slf4j.osgi.git.clone.location}"
           locateNestedProjects="true"/>
-      <repositoryList
-          name="Neon">
-        <repository
-            url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6"/>
-        <repository
-            url="http://agentlab.ru/p2/orbit/missing-swt-fragments/"/>
-      </repositoryList>
     </targlet>
   </setupTask>
   <setupTask
